@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://chhgtyk2gvucu"]
+
+[ext_resource type="PackedScene" uid="uid://bt18arocr2l3n" path="res://Scenes/Player/Player.tscn" id="1_atbvb"]
+[ext_resource type="PackedScene" uid="uid://hnt5nhfefa1q" path="res://Scenes/Jareld/Jareld.tscn" id="2_tn1qc"]
+[ext_resource type="PackedScene" uid="uid://bo05axmtkn8qb" path="res://Scenes/Misc/Room.tscn" id="3_ke1vn"]
+
+[node name="Main Scene" type="Node2D"]
+
+[node name="Room" parent="." instance=ExtResource("3_ke1vn")]
+position = Vector2(-610, -340)
+
+[node name="Player" parent="." instance=ExtResource("1_atbvb")]
+position = Vector2(1, 0)
+
+[node name="Jareld" parent="." instance=ExtResource("2_tn1qc")]
+position = Vector2(315, -163)

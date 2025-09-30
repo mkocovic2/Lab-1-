@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo05axmtkn8qb"]
+
+[ext_resource type="PackedScene" uid="uid://b24f17gl1oy3m" path="res://Scenes/Misc/Wall.tscn" id="1_pgwbv"]
+
+[node name="Room" type="Node2D"]
+rotation = -1.5707964
+scale = Vector2(7, 7)
+
+[node name="Wall Left" parent="." instance=ExtResource("1_pgwbv")]
+position = Vector2(6.8571434, -20.71428)
+rotation = 1.5707964
+scale = Vector2(0.6142857, 0.6142857)
+
+[node name="Wall Right" parent="." instance=ExtResource("1_pgwbv")]
+position = Vector2(7.714279, 171.14285)
+rotation = 1.5707964
+scale = Vector2(0.6142857, 0.6142857)
+
+[node name="Wall Top" parent="." instance=ExtResource("1_pgwbv")]
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Wall Bottom" parent="." instance=ExtResource("1_pgwbv")]
+position = Vector2(-139.85713, 3.1428595)
+scale = Vector2(0.99999994, 0.99999994)
