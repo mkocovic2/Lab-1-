@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://chhgtyk2gvucu"]
+
+[ext_resource type="PackedScene" uid="uid://bt18arocr2l3n" path="res://Scenes/Player/Player.tscn" id="1_atbvb"]
+[ext_resource type="PackedScene" uid="uid://hnt5nhfefa1q" path="res://Scenes/NPC's/Jareld/Jareld.tscn" id="2_tn1qc"]
+[ext_resource type="PackedScene" uid="uid://bo05axmtkn8qb" path="res://Scenes/Misc/Room.tscn" id="3_ke1vn"]
+[ext_resource type="PackedScene" uid="uid://ca0xtu0e4kek1" path="res://Scenes/NPC's/Mike/Mike.tscn" id="4_v87v2"]
+[ext_resource type="PackedScene" uid="uid://cbd7n43plm6n4" path="res://Scenes/NPC's/Pingleton/Pingleton.tscn" id="5_iheal"]
+
+[node name="Main Scene" type="Node2D"]
+
+[node name="Room" parent="." instance=ExtResource("3_ke1vn")]
+position = Vector2(-615, -336)
+scale = Vector2(7.155, 7.155)
+
+[node name="Player" parent="." instance=ExtResource("1_atbvb")]
+position = Vector2(1, 0)
+
+[node name="Jareld" parent="." instance=ExtResource("2_tn1qc")]
+position = Vector2(315, -163)
+
+[node name="Mike" parent="." instance=ExtResource("4_v87v2")]
+position = Vector2(-336, 114)
+
+[node name="Pingleton" parent="." instance=ExtResource("5_iheal")]
+position = Vector2(-194, -189)
